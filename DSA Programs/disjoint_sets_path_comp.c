@@ -91,7 +91,7 @@ void union_set(struct node * hash_table[], int rep_element1, int rep_element2)
 
 		/* Path compression */
 
-		for (temp_ptr = temp_ptr2; temp_ptr->child != NULL; temp_ptr = temp_ptr1->child) {
+		for (temp_ptr = temp_ptr2; temp_ptr->child != NULL; temp_ptr = temp_ptr->child) {
 			temp_ptr->rank = 0;
 			temp_ptr->parent = temp_ptr1;
 		}
